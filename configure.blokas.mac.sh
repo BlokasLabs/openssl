@@ -1,3 +1,4 @@
+export CC="clang -mmacosx-version-min=10.11"
 ./config no-idea no-mdc2 no-rc5 --openssldir=/etc/ssl
 make -j8
 
