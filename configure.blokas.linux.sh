@@ -1,4 +1,4 @@
-./config no-idea no-mdc2 no-rc5 --openssldir=/etc/ssl
+./config shared no-idea no-mdc2 no-rc5 --openssldir=/etc/ssl -Wl,--enable-new-dtags,-rpath,'$(LIBRPATH)'
 make -j8
 
 echo
